@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Spotlight } from "@/app/components/ui/Spotlight";
+import { SparklesCore } from "./components/ui/sparkles";
 
 const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Spotlight
+        className="-top-40 left-0 md:left-80 md:-top-20"
+        fill="white"
+      />v
       <body>
-        <main className={inter.className}>{children}</main>
+        
+        <main className={inter.className}>{children}
+        
+        </main>
       </body>
     </html>
   );
