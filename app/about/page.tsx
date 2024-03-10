@@ -17,6 +17,7 @@ export default function page() {
           </h1>
         </div>
         <div className="mt-[112px] gap-10 flex flex-col">
+        <div className="flex flex-row gap-11">
           <div
             onMouseEnter={() => {
               setShowName(true);
@@ -28,6 +29,13 @@ export default function page() {
           >
             <h1 className="font-semibold text-2xl text-black">Name</h1>
           </div>
+          <div className={showName? "relative w-[280px] -top-1 -left-1 flex justify-center items-center bg-gray-500 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-[280px] before:border-2 before:border-white before:transition-all before:content-[''] " : "hidden"}>
+              <h1 className="font-semibold text-2xl text-white">
+                OTHMAN SALAHI
+              </h1>
+            </div>
+          </div>
+          <div className="flex flex-row gap-11">
           <div
             onMouseEnter={() => {
               setShowLocation(true);
@@ -39,6 +47,14 @@ export default function page() {
           >
             <h1 className="font-semibold text-2xl text-black">Location</h1>
           </div>
+          <div className={showLocation ? "relative w-[280px] -top-1 -left-1 flex justify-center items-center bg-gray-500 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-[280px] before:border-2 before:border-white before:transition-all before:content-[''] " : "hidden"}>
+              <h1 className="font-semibold text-2xl text-white">
+                DAKHLA / MAR
+              </h1>
+            </div>
+
+          </div>
+          <div className="flex flex-row gap-11">
           <div
             onMouseEnter={() => {
               setShowSkilled(true);
@@ -49,6 +65,13 @@ export default function page() {
             className="relative w-[154px] -top-1 -left-1 flex justify-center items-center bg-white py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-[154px] before:border-2 before:border-white before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0"
           >
             <h1 className="font-semibold text-2xl text-black">Skilled</h1>
+          </div>
+          <div className={showSkilled ? "relative w-[280px] -top-1 -left-1 flex justify-center items-center bg-gray-500 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-[280px] before:border-2 before:border-white before:transition-all before:content-[''] " : "hidden"}>
+              <h1 className="font-semibold text-2xl text-white">
+                FRONT / BACK
+              </h1>
+            </div>
+
           </div>
           <div className="flex flex-row gap-11">
           <div
