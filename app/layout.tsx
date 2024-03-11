@@ -22,7 +22,7 @@ export default function RootLayout({
       <Spotlight
         className="-top-40 left-0 md:left-80 md:-top-20"
         fill="white"
-      />v
+      />
       <body>
         
         <main className={inter.className}>{children}
